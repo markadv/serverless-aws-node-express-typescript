@@ -1,0 +1,19 @@
+service: serverless-aws-node-express-typescript
+frameworkVersion: "3"
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-tscpaths
+  - serverless-offline
+
+package:
+  individually: true
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: ${opt:stage, 'dev'}
+  region: us-east-1
+  memorySize: 128
+
+functions: ${file(./functions/get-all-functions.js)}

@@ -1,0 +1,7 @@
+hello-world:
+  handler: services/hello-world/index.handler
+  description: Hello world
+  events:
+    - httpApi:
+        method: GET
+        path: /
