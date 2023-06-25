@@ -6,7 +6,6 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "lint:fix": "eslint --fix",
     "start": "sls offline"
   },
   "dependencies": {
