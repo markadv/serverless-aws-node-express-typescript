@@ -1,0 +1,5 @@
+hello-world-repeating:
+  handler: services/hello-world-repeating/index.run
+  description: Hello world repeating
+  events:
+    - schedule: rate(1 minute)
