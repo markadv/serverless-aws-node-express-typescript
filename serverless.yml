@@ -5,7 +5,6 @@ plugins:
   - serverless-plugin-typescript
   - serverless-tscpaths
   - serverless-offline
-  - serverless-offline-schedule
 
 package:
   individually: true
